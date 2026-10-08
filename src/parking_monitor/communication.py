@@ -33,8 +33,8 @@ class Communicator:
         client: ApiClient,
         spots: list[SpotConfig],
         source: str,
-        sync_seconds: float = 15,
-        retry_max: float = 30,
+        sync_seconds: float = 0.1,
+        retry_max: float = 3,
     ):
         self.client, self.spots, self.source = client, spots, source
         self.sync_seconds, self.retry_max = sync_seconds, retry_max

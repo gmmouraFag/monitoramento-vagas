@@ -71,7 +71,7 @@ def main():
     stop = threading.Event()
     signal.signal(signal.SIGINT, lambda *_: stop.set())
     signal.signal(signal.SIGTERM, lambda *_: stop.set())
-    video_path = os.getenv("VIDEO_PATH", "../Controle Automático de Vagas para Estacionamentos - editado.mp4")
+    video_path = os.getenv("VIDEO_PATH", "video/estacionamento.mp4")
     fps = float(os.getenv("PROCESS_FPS", "2"))
     if not 0 < fps <= 24:
         raise ValueError("PROCESS_FPS deve ser maior que zero e no máximo 24")
