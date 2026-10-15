@@ -1,5 +1,10 @@
 # Monitoramento de vagas Parking FAG
 
+> Atualização de 15/10/2026: [correção da sombra na A-01 e seus limites](docs/PCD.md).
+> A execução integrada atual está em `orchestrador-parking-fag/docs/EXECUCAO_RESERVAS.md`.
+> O launcher Java compartilha uma chave temporária de ingestão e usa sync 15s/retry 30s;
+> a reserva pertence ao Java e não modifica a classificação física do Python.
+
 Monitor Python do MP4 fornecido, em loop permanente, com OpenCV. Envia somente ao backend Java; não acessa MySQL.
 Configuração inicial: 21 regiões com limites identificáveis, 13 no setor A e 8 no B; 4 vagas possuem sinalização de acessibilidade.
 Os códigos são identificadores desta configuração, não uma numeração oficial inferida do estacionamento.
