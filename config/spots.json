@@ -36,8 +36,8 @@
         }
       ],
       "calibration": {
-        "freeMax": 0.12,
-        "occupiedMin": 0.15
+        "freeMax": 0.16,
+        "occupiedMin": 0.19
       }
     },
     {
